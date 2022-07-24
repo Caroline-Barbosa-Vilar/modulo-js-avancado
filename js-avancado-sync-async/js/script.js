@@ -1,5 +1,10 @@
 function boilTheWater() {
   console.log('Boil the water');
+
+  setTimeout(() => {
+    console.log('Water is ready')
+    makeTheCoffee();
+  }, 5000);
 };
 
 function fixCoffee() {
@@ -16,4 +21,3 @@ function makeTheCoffee() {
 
 boilTheWater();
 fixCoffee();
-makeTheCoffee();

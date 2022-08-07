@@ -1,6 +1,8 @@
 let boilWater = (kettlesOnTheStove, stoveIsOn) => {
   return new Promise((resolve, reject) => {
 
+    if(typeof kettlesOnTheStove != 'boolean') throw 'Only boolean is accept'
+
     if(kettlesOnTheStove && stoveIsOn) {
       console.log('Start boiling water');
       resolve();
@@ -32,7 +34,7 @@ let washTheCup = (coffeeDrinked) => {
   })
 }
 
-let kettlesOnTheStove = true;
+let kettlesOnTheStove = 'test';
 let stoveIsOn = false;
 
 async function starToMakingCoffee() {
@@ -46,6 +48,6 @@ async function starToMakingCoffee() {
     console.log(error);
   } finally {
     console.log('Coffee Ritual concludes');
-  }
+  } 
 }
 starToMakingCoffee();

@@ -41,9 +41,11 @@ async function starToMakingCoffee() {
     const coffeeReady = await boiledWater(waterReady);
     const coffeeFinished = await coffeeDrinked(coffeeReady);
     const washedCup = await washTheCup(coffeeFinished);
-      if (washedCup) console.log('Coffee Ritual concludes');
+      // if (washedCup) console.log('Coffee Ritual concludes');
   } catch(error) {
     console.log(error);
+  } finally {
+    console.log('Coffee Ritual concludes');
   }
 }
 starToMakingCoffee();

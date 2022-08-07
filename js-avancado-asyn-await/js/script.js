@@ -33,13 +33,17 @@ let washTheCup = (coffeeDrinked) => {
 }
 
 let kettlesOnTheStove = true;
-let stoveIsOn = true;
+let stoveIsOn = false;
 
 async function starToMakingCoffee() {
-  const waterReady = await boilWater(kettlesOnTheStove, stoveIsOn);
-  const coffeeReady = await boiledWater(waterReady);
-  const coffeeFinished = await coffeeDrinked(coffeeReady);
-  const washedCup = await washTheCup(coffeeFinished);
-    if (washedCup) console.log('Coffee Ritual concludes');
+  try {
+    const waterReady = await boilWater(kettlesOnTheStove, stoveIsOn);
+    const coffeeReady = await boiledWater(waterReady);
+    const coffeeFinished = await coffeeDrinked(coffeeReady);
+    const washedCup = await washTheCup(coffeeFinished);
+      if (washedCup) console.log('Coffee Ritual concludes');
+  } catch(error) {
+    console.log(error);
+  }
 }
 starToMakingCoffee();

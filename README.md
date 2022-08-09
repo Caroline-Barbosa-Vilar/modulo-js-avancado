@@ -29,10 +29,24 @@ _Para a versão em Português, clique [aqui](#portuguese)._
 
 <br>
 
-<!-- ## What I learned
+## What I learned
 
-- ;
-- . -->
+How to work with:
+- Filter, Map and reduce;
+- Template strings;
+- Destructuring assignment;
+- Spread;
+- Rest;
+- SetInterval and SetTimeout;
+- Sync and Async;
+- Promises;
+- Then;
+- Async and Await;
+- Debuging;
+- JSON and Fetch;
+- Using API;
+- Import and Export;
+- Managing packages with NPM.
 
 <br>
 
@@ -67,10 +81,24 @@ _Para a versão em Português, clique [aqui](#portuguese)._
 </div>
 
 
-<!-- ## O que aprendi
+## O que aprendi
 
-- ;
-- . -->
+- Filter, Map e reduce;
+- Template strings;
+- Desestruturação (objetos e arrays);
+- Spread;
+- Rest;
+- SetInterval and SetTimeout;
+- Síncrono e Assíncrono;
+- Promises;
+- Then;
+- Async e Await;
+- Tratando erros no JS;
+- JSON e Fetch;
+- Usando API;
+- Import e Export;
+- Gerenciamento de pacotes com NPM.
+
 
 <br>
 
